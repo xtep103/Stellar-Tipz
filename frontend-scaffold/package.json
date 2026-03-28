@@ -5,10 +5,10 @@
   "type": "module",
   "description": "Stellar Tipz - Decentralized tipping platform frontend",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
+    "dev": "node init && vite",
+    "build": "node init && vite build",
     "preview": "vite preview",
-    "start": "vite",
+    "start": "node init && vite",
     "typecheck": "tsc --noEmit",
     "lint": "eslint src/",
     "prepare": "husky"
