@@ -1,0 +1,30 @@
+{
+  "default_branch": "test-implement-drips",
+  "branches": [
+    "chore/testnet-cleanup",
+    "copilot/fix-build-errors-frontend-smart",
+    "feat/n-plus-one-query-detection-1243",
+    "fix/pr-42-rebase",
+    "main",
+    "origin",
+    "test-implement-drips"
+  ],
+  "parent": {
+    "chore/testnet-cleanup": "test-implement-drips",
+    "copilot/fix-build-errors-frontend-smart": "test-implement-drips",
+    "feat/n-plus-one-query-detection-1243": "test-implement-drips",
+    "fix/pr-42-rebase": "test-implement-drips",
+    "main": "test-implement-drips",
+    "origin": "test-implement-drips",
+    "test-implement-drips": null
+  },
+  "order": [
+    "test-implement-drips",
+    "chore/testnet-cleanup",
+    "copilot/fix-build-errors-frontend-smart",
+    "feat/n-plus-one-query-detection-1243",
+    "fix/pr-42-rebase",
+    "main",
+    "origin"
+  ]
+}
