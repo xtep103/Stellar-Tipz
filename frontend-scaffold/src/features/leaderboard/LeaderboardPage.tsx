@@ -14,6 +14,14 @@ import { useI18n } from "@/i18n";
 import { useLeaderboard } from "@/hooks/useLeaderboard";
 import { usePageTitle } from "@/hooks/usePageTitle";
 import LeaderboardSkeleton from "./LeaderboardSkeleton";
+import LeaderboardTable from "./LeaderboardTable";
+
+const LeaderboardPage: React.FC = () => {
+  usePageTitle("Leaderboard");
+
+  const { entries, loading, error, refetch } = useLeaderboard();
+
+  // Top 3 entries for podium display; ranks 4+ go to the paginated table.
 
 const PAGE_SIZE = 20;
 
@@ -63,7 +71,7 @@ const LeaderboardPage: React.FC = () => {
       : t("leaderboard.loadedWithCount", { count: entries.length });
 
   if (loading && entries.length === 0 && !error) {
-    return <LeaderboardSkeleton count={PAGE_SIZE} />;
+    return <LeaderboardSkeleton count={25} />;
   }
 
   return (
