@@ -15,17 +15,13 @@ dist/
 *.wasm
 
 # Environment
-.env
-.env.local
 .env.*.local
 
 # Ignore any environment variant files but keep example files
-.env.*
 !.env.example
 
 # IDE
 .idea/
-.vscode/
 *.swp
 *.swo
 
@@ -35,3 +31,4 @@ Thumbs.db
 
 issue.md
 pr.md
+config.bat
