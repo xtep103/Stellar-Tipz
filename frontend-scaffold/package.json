@@ -5,10 +5,10 @@
   "type": "module",
   "description": "Stellar Tipz - Decentralized tipping platform frontend",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
+    "dev": "node init && vite",
+    "build": "node init && vite build",
     "preview": "vite preview",
-    "start": "vite",
+    "start": "node init && vite",
     "typecheck": "tsc --noEmit",
     "lint": "eslint src/",
     "test": "vitest run",
@@ -25,7 +25,7 @@
     "audit": "npm audit --audit-level=high",
     "audit:report": "npm audit --json > audit-report.json || true",
     "storybook": "node node_modules/storybook/dist/bin/dispatcher.js dev -p 6006",
-    "build-storybook": "node node_modules/storybook/dist/bin/dispatcher.js build"
+    "build-storybook": "node init && node node_modules/storybook/dist/bin/dispatcher.js build"
   },
   "lint-staged": {
     "src/**/*.{ts,tsx}": [
