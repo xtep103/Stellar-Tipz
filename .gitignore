@@ -15,17 +15,13 @@ dist/
 *.wasm
 
 # Environment
-.env
-.env.local
 .env.*.local
 
 # Ignore any environment variant files but keep example files
-.env.*
 !.env.example
 
 # IDE
 .idea/
-.vscode/
 *.swp
 *.swo
 
@@ -39,3 +35,4 @@ pr.md
 ...
 .npm_cache/
 
+config.bat
